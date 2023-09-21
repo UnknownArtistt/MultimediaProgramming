@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/countTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="60dp"
+        android:text="0"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/batPanelText"
+        app:layout_constraintEnd_toStartOf="@+id/resetGeneral" />
+
+    <Button
+        android:id="@+id/resetGeneral"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:text="RESET ALL"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/batPanelReset"
+        app:layout_constraintStart_toStartOf="@+id/batPanelGehitu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <!-- 1 PANEL -->
+
+    <!-- 2 PANEL -->
+
+    <TextView
+        android:id="@+id/batPanelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="72dp"
+        android:text="0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/biPanelText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/batPanelGehitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="+1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/biPanelGehitu"
+        app:layout_constraintStart_toEndOf="@+id/batPanelText" />
+
+    <Button
+        android:id="@+id/batPanelReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="RESET"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/biPanelReset"
+        app:layout_constraintStart_toEndOf="@+id/batPanelGehitu" />
+
+    <!-- 2 PANEL -->
+
+    <!-- 3 PANEL -->
+
+    <TextView
+        android:id="@+id/biPanelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="68dp"
+        android:text="0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/hiruPanelText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/biPanelGehitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="+1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/hiruPanelGehitu"
+        app:layout_constraintStart_toEndOf="@+id/biPanelText" />
+
+    <Button
+        android:id="@+id/biPanelReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="36dp"
+        android:text="RESET"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/hiruPanelReset"
+        app:layout_constraintStart_toEndOf="@+id/biPanelGehitu" />
+
+    <!-- 3 PANEL -->
+
+    <!-- 4 PANEL -->
+
+    <TextView
+        android:id="@+id/hiruPanelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="56dp"
+        android:text="0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/lauPanelText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hiruPanelGehitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="44dp"
+        android:text="+1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/lauPanelGehitu"
+        app:layout_constraintStart_toEndOf="@+id/hiruPanelText" />
+
+    <Button
+        android:id="@+id/hiruPanelReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="40dp"
+        android:text="RESET"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/lauPanelReset"
+        app:layout_constraintStart_toEndOf="@+id/hiruPanelGehitu" />
+
+    <TextView
+        android:id="@+id/lauPanelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="232dp"
+        android:text="0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lauPanelGehitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="232dp"
+        android:text="+1"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lauPanelText" />
+
+    <Button
+        android:id="@+id/lauPanelReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="236dp"
+        android:text="RESET"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lauPanelGehitu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
