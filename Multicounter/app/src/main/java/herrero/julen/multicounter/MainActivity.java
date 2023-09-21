@@ -141,5 +141,21 @@ public class MainActivity extends AppCompatActivity {
                 totala.setText(String.valueOf(kontuGlobala));
             }
         });
+
+        resetGlobala.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                kontuBat = 0;
+                kontuBi = 0;
+                kontuHiru = 0;
+                kontuLau = 0;
+                kontuGlobala = kontuBat + kontuBi + kontuHiru + kontuLau;
+                totala.setText(String.valueOf(kontuGlobala));
+                batCount.setText(String.valueOf(kontuGlobala));
+                biCount.setText(String.valueOf(kontuGlobala));
+                hiruCount.setText(String.valueOf(kontuGlobala));
+                lauCount.setText(String.valueOf(kontuGlobala));
+            }
+        });
     }
 }
