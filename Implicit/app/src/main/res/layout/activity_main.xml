@@ -8,10 +8,10 @@
 
     <EditText
         android:id="@+id/shareTxt"
-        android:layout_width="290dp"
+        android:layout_width="289dp"
         android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="13dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/shareButton"
@@ -19,67 +19,67 @@
         app:layout_constraintTop_toBottomOf="@+id/lekuButton" />
 
     <EditText
-        android:id="@+id/locName"
-        android:layout_width="0dp"
+        android:id="@+id/urlStr"
+        android:layout_width="282dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textUri"
-        app:layout_constraintBottom_toTopOf="@+id/lekuButton"
-        app:layout_constraintEnd_toEndOf="@+id/shareTxt"
-        app:layout_constraintStart_toStartOf="@+id/lekuButton"
-        app:layout_constraintTop_toBottomOf="@+id/findUrl" />
-
-    <Button
-        android:id="@+id/findUrl"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:onClick="openWeb"
-        android:text="OPEN WEBSITE"
-        app:layout_constraintBottom_toTopOf="@+id/locName"
-        app:layout_constraintEnd_toEndOf="@+id/lekuButton"
-        app:layout_constraintStart_toStartOf="@+id/urlStr"
-        app:layout_constraintTop_toBottomOf="@+id/urlStr" />
+        app:layout_constraintBottom_toTopOf="@+id/findUrl"
+        app:layout_constraintStart_toStartOf="@+id/findUrl"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/lekuButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="11dp"
         android:text="OPEN LOCATION"
         app:layout_constraintBottom_toTopOf="@+id/shareTxt"
-        app:layout_constraintEnd_toEndOf="@+id/shareTxt"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/shareButton"
+        app:layout_constraintStart_toStartOf="@+id/shareTxt"
         app:layout_constraintTop_toBottomOf="@+id/locName" />
-
-    <EditText
-        android:id="@+id/urlStr"
-        android:layout_width="293dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="6dp"
-        android:ems="10"
-        android:inputType="textUri"
-        app:layout_constraintBottom_toTopOf="@+id/findUrl"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/shareButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="323dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="312dp"
         android:text="SHARE THIS TEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/shareTxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shareTxt" />
+
+    <Button
+        android:id="@+id/findUrl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="openWeb"
+        android:text="OPEN WEBSITE"
+        app:layout_constraintBottom_toTopOf="@+id/locName"
+        app:layout_constraintEnd_toEndOf="@+id/shareTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlStr" />
+
+    <EditText
+        android:id="@+id/locName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textUri"
+        app:layout_constraintBottom_toTopOf="@+id/lekuButton"
+        app:layout_constraintEnd_toEndOf="@+id/urlStr"
+        app:layout_constraintStart_toStartOf="@+id/lekuButton"
+        app:layout_constraintTop_toBottomOf="@+id/findUrl" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
